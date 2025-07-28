@@ -17,9 +17,9 @@ def scaleLink(H, linkDimensions):
 
     linkDimensions["Neck"]["Z"] = 0.0481 * H
 
-    linkDimensions["UpperArm"]["Y"] = 0.1659 * H
+    linkDimensions["UpperArm"]["Y"] = 0.1159 * H
 
-    linkDimensions["ForeArm"]["Y"] = 0.1384 * H
+    linkDimensions["ForeArm"]["Y"] = 0.1184 * H
 
     linkDimensions["Hand"]["Y"] = 0.0626 * H
 
@@ -93,13 +93,12 @@ def scaleJoint(linkDimensions, jointPosition):
     jointPosition["jBottomLumbarMidLumbar"]["Y"] = 0
     jointPosition["jBottomLumbarMidLumbar"]["Z"] = linkDimensions["BottomLumbar"]["Z"]
     
-
     jointPosition["jChestRightShoulder"]["X"] = 0
     jointPosition["jChestRightShoulder"]["Y"] = -linkDimensions["Chest"]["Y"] / 2
     jointPosition["jChestRightShoulder"]["Z"] = (
         linkDimensions["Chest"]["Z"] - linkDimensions["Shoulder"]["X"] / 2
     )
-
+    
     jointPosition["jChestLeftShoulder"]["X"] = 0
     jointPosition["jChestLeftShoulder"]["Y"] = linkDimensions["Chest"]["Y"] / 2
     jointPosition["jChestLeftShoulder"]["Z"] = (
