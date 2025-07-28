@@ -8,35 +8,37 @@ import numpy as np
 def scaleLink(H, linkDimensions):
     # Links' length and width modification
 
+    print(H)
+
     # Common dimensions
     linkDimensions["Head"]["X"] = 0.13 * H
     linkDimensions["Head"]["Y"] = 0.13 * H
     linkDimensions["Head"]["Z"] = 0.13 * H
 
-    linkDimensions["Neck"]["Z"] = 0.052 * H
+    linkDimensions["Neck"]["Z"] = 0.0481 * H
 
-    linkDimensions["UpperArm"]["Y"] = 0.196 * H
+    linkDimensions["UpperArm"]["Y"] = 0.1659 * H
 
-    linkDimensions["ForeArm"]["Y"] = 0.156 * H
+    linkDimensions["ForeArm"]["Y"] = 0.1384 * H
 
-    linkDimensions["Hand"]["Y"] = 0.108 * H
+    linkDimensions["Hand"]["Y"] = 0.0626 * H
 
-    linkDimensions["UpperLeg"]["Z"] = 0.245 * H
+    linkDimensions["UpperLeg"]["Z"] = 0.2356 * H
 
-    linkDimensions["LowerLeg"]["Z"] = 0.246 * H
+    linkDimensions["LowerLeg"]["Z"] = 0.2278 * H
 
     linkDimensions["Foot"]["X"] = 0.152 * H
     linkDimensions["Foot"]["Y"] = 0.055 * H
     linkDimensions["Foot"]["Z"] = 0.039 * H
     
-    linkDimensions["Chest"]["Z"] = 0.118 * H
-    linkDimensions["Chest"]["Y"] = 0.259 * H / 3
+    linkDimensions["Chest"]["Z"] = 0.10 * H
+    linkDimensions["Chest"]["Y"] = 0.2521 * H / 3
     
-    linkDimensions["TopLumbar"]["Z"] = 0.08* H
+    linkDimensions["TopLumbar"]["Z"] = 0.05 * H
     linkDimensions["TopLumbar"]["Y"] = 0.1
     
-    linkDimensions["MidLumbar"]["Z"] = 0.045 * H
-    linkDimensions["MidLumbar"]["Y"] = 0.1 
+    linkDimensions["MidLumbar"]["Z"] = 0.04 * H
+    linkDimensions["MidLumbar"]["Y"] = 0.105 
     
     linkDimensions["BottomLumbar"]["Z"] = 0.0295 * H
     linkDimensions["BottomLumbar"]["Y"] = 0.1 

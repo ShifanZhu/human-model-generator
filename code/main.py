@@ -221,7 +221,7 @@ if OPT_CHECK_CONSISTENCY_MODEL:
     G_T_base = iDynTree.Transform(G_T_b_rot, G_T_b_pos)
     base_vel = iDynTree.Twist([0, 0, 0, 0, 0, 0])
 
-    dynComp.setFloatingbase("base")
+    dynComp.setFloatingBase("base")
     mass_mx = iDynTree.MatrixDynSize()
 
     num_rows, num_cols = s.shape
@@ -272,7 +272,7 @@ if OPT_VISUALIZZATION_MODEL:
     # frames = viz.frames()
     cam = viz.camera()
     cam.setPosition(iDynTree.Position(2, 1, 2.5))
-    viz.camera().animator().enableMouseControl(True)
+    # viz.camera().animator().enableMouseControl(True)
 
     viz.addModel(mdlLoader.model(), "ModelVisualizer")
     # modelViz = viz.modelViz("ModelVisualizer")
